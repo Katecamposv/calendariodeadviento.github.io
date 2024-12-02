@@ -1,0 +1,261 @@
+/* Estilo base para el body */
+body {
+    font-family: 'Poppins', sans-serif;
+   
+    margin: 0;
+    padding: 0;
+    color: #333; /* Texto de color oscuro para mejor legibilidad */
+    cursor: url('Imagenes/Mouse/arbol-de-navidad.png'), auto;
+
+   
+}
+
+*{
+    cursor: url('Imagenes/Mouse/arbol-de-navidad.png'), auto;
+}
+/* Encabezado */
+header {
+
+    color: #154d1e;
+    text-align: center;
+    padding: 30px 0;
+   
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    
+}
+
+/* Barra de navegación */
+.topnav {
+  
+    background-color: #2e8b57; /* Verde navideño suave */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #b4260d;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover */
+.topnav a:hover {
+    background-color: #0e44257a;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(116, 32, 17, 0.075);
+}
+
+.topnav a.active {
+    background-color: #b90f0f;
+    color: #fff;
+}
+
+/* Subtítulos */
+#Subtitulo h3{
+    color: #154d1e;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
+
+#Subtitulo h3:first-child {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#Subtitulo h3:last-child {
+    font-size: 1.5rem;
+}
+
+/* Caja de cuenta regresiva */
+#cuenta-regresiva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Elementos de tiempo */
+.tiempo {
+    text-align: center;
+    background-color: #b4260d;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.numero {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.unidad {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.tiempo span.unidad {
+    display: block;
+    margin-top: 5px;
+}
+/* Bloques de contenido */
+.bloque {
+    background-color: #fff;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor para texto y imagen alineados en fila */
+.contenedor-imagen-texto {
+    display: flex; /* Usamos flexbox para alinear el contenido en fila */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Separa el texto de la imagen */
+    margin-top: 20px;
+
+}
+
+.texto {
+    flex: 1; /* Hace que el texto ocupe el máximo espacio disponible */
+    margin-right: 20px; /* Da un poco de espacio entre el texto y la imagen */
+}
+
+.borde-navideno {
+    max-width: 300px; /* Limita el tamaño máximo de la imagen */
+}
+
+.borde-navideno img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+
+/* Estilos para los encabezados y texto */
+.bloque h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #b90f0f;
+}
+
+.bloque p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #000000;
+}
+
+.bloque ul {
+ 
+    padding-left: 30px;
+    
+}
+
+.bloque ul li {
+padding: 6px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+#Frases{
+    background-color: #9ce2bb2c;
+    border-radius: 2%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#Frases h3{
+    text-align: center;
+     font-size: 50px; 
+     font-style: italic; 
+     color: #b90f0f;
+     width: 50%;
+     padding: 50px;
+     font-family: 'Dancing Script', sans-serif;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .topnav {
+        flex-direction: column;
+    }
+
+    .topnav a {
+        padding: 12px 20px;
+    }
+
+    #cuenta-regresiva {
+        flex-direction: column;
+    }
+
+    .tiempo {
+        padding: 12px 20px;
+    }
+
+    .numero {
+        font-size: 2.5rem;
+    }
+
+    .unidad {
+        font-size: 1rem;
+    }
+
+    .bloque {
+        padding: 20px;
+        margin: 10px;
+
+    }
+
+    .contenedor-imagen-texto {
+        flex-direction: column; /* En pantallas más pequeñas, las imágenes se apilan encima del texto */
+        align-items: center; /* Alinea el texto e imagen al inicio */
+
+    }
+
+    .borde-navideno img {
+        max-width: 100%; /* Asegura que la imagen se ajuste bien en pantallas pequeñas */
+    }
+}
+
+
+/* Borde sencillo pero navideño */
+.bloque {
+    border: 2px solid #2e8b57; /* Borde de 5px de grosor, color verde */
+    border-radius: 10px; /* Bordes redondeados para hacerlo más elegante */
+    padding: 20px; /* Espaciado interno del bloque */
+    margin: 20px auto; /* Espaciado externo del bloque */
+    background-color: #fff; /* Color de fondo del bloque */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para el bloque */
+}
+
+
+/* Efecto sutil de brillo navideño */
+.bloque:hover {
+    box-shadow: 0 0 20px rgba(51, 255, 0, 0.89); /* Brillo dorado suave */
+}
+
